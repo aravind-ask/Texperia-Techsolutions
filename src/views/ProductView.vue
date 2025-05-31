@@ -30,6 +30,8 @@
                 class="w-full h-full border-0 pointer-events-none"
                 title="Texperia Live Preview"
                 loading="lazy"
+                width="960"
+                height="540"
               ></iframe>
               <div class="monitor-overlay">
                 <a
@@ -52,6 +54,8 @@
                 class="w-full h-full border-0 pointer-events-none"
                 title="Texperia Live Preview"
                 loading="lazy"
+                width="768"
+                height="576"
               ></iframe>
               <div class="monitor-overlay">
                 <a
@@ -74,6 +78,8 @@
                 class="w-full h-full border-0 pointer-events-none"
                 title="Texperia Live Preview"
                 loading="lazy"
+                width="320"
+                height="568"
               ></iframe>
               <div class="monitor-overlay">
                 <a
@@ -214,6 +220,12 @@ useHead({
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.monitor-frame:hover {
+  transform: scale(1);
 }
 
 .monitor-frame::before {
@@ -282,6 +294,12 @@ useHead({
   position: relative;
   max-width: 768px;
   margin: 0 auto;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.tablet-frame:hover {
+  transform: scale(1);
 }
 
 .tablet-screen {
@@ -314,6 +332,12 @@ useHead({
   position: relative;
   max-width: 320px;
   margin: 0 auto;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.mobile-frame:hover {
+  transform: scale(1);
 }
 
 .mobile-screen {

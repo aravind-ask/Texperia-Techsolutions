@@ -1,27 +1,19 @@
 <template>
   <div>
     <!-- Hero Banner -->
-    <section
-      class="relative h-[100vh] min-h-[600px] bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/home-banner.webp')"
-    >
-      <div class="absolute inset-0 bg-gradient-to-r from-primary-600/90 to-primary-800/90"></div>
-      <!-- <div class="container mx-auto px-4 h-full flex items-center relative z-10">
-        <div class="max-w-2xl text-white">
-          <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            Transforming Digital Engagement
-          </h1>
-          <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">
-            Creating cutting-edge digital experiences that connect businesses with their audience
-          </p>
-          <router-link
-            to="/contact"
-            class="inline-block bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors animate-fade-in-delay-2"
-          >
-            Get Started
-          </router-link>
-        </div>
-      </div> -->
+    <section class="relative w-full overflow-hidden">
+      <div class="relative w-full" style="padding-bottom: 56.25%">
+        <img
+          src="/home-banner.webp"
+          alt="Texperia Banner"
+          class="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 ease-in-out"
+          loading="eager"
+          width="1920"
+          height="1080"
+          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
+          srcset="/home-banner.webp 1920w, /home-banner.webp 1024w, /home-banner.webp 640w"
+        />
+      </div>
     </section>
 
     <!-- Intro Section -->
@@ -81,7 +73,7 @@
     <!-- Supported By Section -->
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Supported By</h2>
+        <h2 class="text-3xl font-bold text-center mb-8">Supported By</h2>
         <div class="flex justify-between mx-50 items-center">
           <div
             v-for="(logo, index) in supporterLogos"
@@ -98,6 +90,7 @@
             </div>
           </div>
         </div>
+        <h3 class="text-2xl text-center mt-8">We cannot do this alone. Thank you.</h3>
       </div>
     </section>
 
@@ -107,10 +100,15 @@
         <h2 class="text-3xl font-bold text-center mb-12">Meet the Team</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div v-for="member in teamMembers" :key="member.name" class="text-center">
-            <div
-              class="relative w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden"
-            >
-              <img :src="member.photo" :alt="member.name" class="w-full h-full object-cover" />
+            <div class="relative w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden">
+              <img
+                :src="member.photo"
+                :alt="member.name"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                width="192"
+                height="192"
+              />
             </div>
             <h3 class="text-xl font-semibold mb-2">{{ member.name }}</h3>
             <p class="text-gray-600 mb-4">{{ member.role }}</p>
