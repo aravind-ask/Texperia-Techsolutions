@@ -74,14 +74,14 @@
     <section class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Supported By</h2>
-        <div class="flex justify-between mx-50 items-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div
             v-for="(logo, index) in supporterLogos"
             :key="logo.name"
-            class="supporter-logo-container w-35"
+            class="supporter-logo-container"
             :style="{ '--delay': `${index * 0.2}s` }"
           >
-            <div class="supporter-logo">
+            <div class="supporter-logo aspect-square p-4">
               <img
                 :src="logo.image"
                 :alt="logo.name"
