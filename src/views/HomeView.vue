@@ -1,178 +1,22 @@
 <template>
   <div>
-    <!-- Hero Banner -->
-    <section class="relative w-full overflow-hidden">
-      <div class="relative w-full" style="padding-bottom: 56.25%">
-        <img
-          src="/home-banner.webp"
-          alt="Texperia Banner"
-          class="absolute inset-0 w-full h-full object-cover object-center transition-all duration-700 ease-in-out"
-          loading="eager"
-          width="1920"
-          height="1080"
-          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
-          srcset="/home-banner.webp 1920w, /home-banner.webp 1024w, /home-banner.webp 640w"
-        />
-      </div>
-    </section>
-
-    <!-- Intro Section -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto text-center">
-          <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
-            Texperia is dedicated to creating cutting-edge digital engagement and experiential
-            products that transform how businesses connect with audiences. With a focus on
-            innovation and impact, we bridge the gap between technology and meaningful engagement.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core Values Section -->
-    <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          At the core of Texperia lies two things:
-        </h2>
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="text-primary-600 text-4xl font-bold mb-4">1</div>
-            <p class="text-gray-700">
-              Understanding the employee journey from recruitment to retirement, we identify key
-              moments that matter and create meaningful experiences.
-            </p>
-          </div>
-          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-            <div class="text-primary-600 text-4xl font-bold mb-4">2</div>
-            <p class="text-gray-700">
-              Leveraging the best in interactive and immersive technologies to create consumer grade
-              digital experiences.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Company Vision Section -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Company Vision</h2>
-          <p class="text-lg text-gray-700 leading-relaxed">
-            At Texperia, we believe in a future where digital experiences foster stronger, lasting
-            connections. Founded with the vision of transforming traditional engagement into
-            interactive, enjoyable experiences, we specialize in creating platforms that keep
-            audiences actively involved. From gamified solutions to immersive engagement tools,
-            we're pushing boundaries to redefine digital interaction.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Supported By Section -->
-    <section class="py-20 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Supported By</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          <div
-            v-for="(logo, index) in supporterLogos"
-            :key="logo.name"
-            class="supporter-logo-container"
-            :style="{ '--delay': `${index * 0.2}s` }"
-          >
-            <div class="supporter-logo aspect-square p-4">
-              <img
-                :src="logo.image"
-                :alt="logo.name"
-                class="w-full h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
-          </div>
-        </div>
-        <h3 class="text-2xl text-center mt-8">We cannot do this alone. Thank you.</h3>
-      </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Meet the Team</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div v-for="member in teamMembers" :key="member.name" class="text-center">
-            <div class="relative w-48 h-48 mx-auto mb-4 rounded-lg overflow-hidden">
-              <img
-                :src="member.photo"
-                :alt="member.name"
-                class="w-full h-full object-cover"
-                loading="lazy"
-                width="192"
-                height="192"
-              />
-            </div>
-            <h3 class="text-xl font-semibold mb-2">{{ member.name }}</h3>
-            <p class="text-gray-600 mb-4">{{ member.role }}</p>
-            <a
-              :href="member.linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="inline-block text-primary-600 hover:text-primary-700 transition-colors"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <HeroBanner />
+    <IntroSection />
+    <CoreValues />
+    <CompanyVision />
+    <SupportedBy />
+    <TeamSection />
   </div>
 </template>
 
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
-
-const supporterLogos = [
-  {
-    name: 'IBM Udaipur Incubation Center',
-    image: '/about-iim.webp',
-  },
-  {
-    name: 'Razorpay Rize',
-    image: '/about-razorpay.webp',
-  },
-  {
-    name: '10000 StartUps',
-    image: '/about-10000.webp',
-  },
-  {
-    name: 'Startup Leadership',
-    image: '/about-slp.webp',
-  },
-]
-
-const teamMembers = [
-  {
-    name: 'Anirudh Goutham',
-    role: 'Founder & CEO',
-    linkedin: 'https://www.linkedin.com/in/anirudh-goutham',
-    photo: '/about-anirudh-goutham.webp',
-  },
-  {
-    name: 'Giridhar J',
-    role: 'Founder & COO',
-    linkedin: 'https://www.linkedin.com/in/giridhar-jayakumar',
-    photo: '/about-giridhar-j.webp',
-  },
-  {
-    name: 'Rohit Iyer',
-    role: 'CoFounder & CTO',
-    linkedin: 'https://www.linkedin.com/in/iyerrohit',
-    photo: '/about-rohit-iyer.webp',
-  },
-]
+import HeroBanner from '@/components/home/HeroBanner.vue'
+import IntroSection from '@/components/home/IntroSection.vue'
+import CoreValues from '@/components/home/CoreValues.vue'
+import CompanyVision from '@/components/home/CompanyVision.vue'
+import SupportedBy from '@/components/home/SupportedBy.vue'
+import TeamSection from '@/components/home/TeamSection.vue'
 
 useHead({
   title: 'Texperia Techsolutions - Digital Engagement & Experiential Products',

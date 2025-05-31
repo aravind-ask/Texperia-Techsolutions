@@ -5,7 +5,7 @@ import TheFooter from './components/layout/TheFooter.vue'
 
 // Default meta tags
 useHead({
-  title: 'Texperia Techsolutions',
+  title: 'Texperia Techsolutions Pvt. Ltd.',
   meta: [
     {
       name: 'description',
@@ -14,7 +14,7 @@ useHead({
     },
     {
       property: 'og:title',
-      content: 'Texperia Techsolutions',
+      content: 'Texperia Techsolutions Pvt. Ltd.',
     },
     {
       property: 'og:description',

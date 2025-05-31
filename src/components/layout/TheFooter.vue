@@ -67,7 +67,10 @@
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Udaipur, Rajasthan, India</span>
+                <span
+                  >XHPH+764, 1st Cross Rd, <br />
+                  Madhava Nagar, Gandhi Nagar, <br />Bengaluru, Karnataka 560001</span
+                >
               </li>
             </ul>
           </div>

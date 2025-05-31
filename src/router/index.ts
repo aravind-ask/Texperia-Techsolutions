@@ -7,7 +7,7 @@ const routes: RouteRecordRaw[] = [
     name: 'home',
     component: () => import('../views/HomeView.vue'),
     meta: {
-      title: 'Texperia Info Tech - Digital Engagement & Experiential Products',
+      title: 'Texperia Techsolutions Pvt. Ltd. - Digital Engagement & Experiential Products',
       description:
         'Texperia creates cutting-edge digital engagement and experiential products that transform how businesses connect with audiences.',
     },
