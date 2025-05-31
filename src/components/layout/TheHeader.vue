@@ -13,8 +13,12 @@
             v-for="item in navItems"
             :key="item.path"
             :to="item.path"
-            class="text-gray-600 hover:text-primary-600 transition-colors font-medium text-sm sm:text-base"
-            :class="{ 'text-primary-600': $route.path === item.path }"
+            class="text-sm sm:text-base py-2 transition-colors duration-300"
+            :class="[
+              $route.path === item.path
+                ? 'text-primary-600 font-bold'
+                : 'text-gray-600 hover:text-primary-600 font-medium',
+            ]"
           >
             {{ item.name }}
           </router-link>
