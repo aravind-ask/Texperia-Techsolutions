@@ -6,6 +6,7 @@
     <CompanyVision />
     <SupportedBy />
     <TeamSection />
+    <PrestigiousProduct />
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import CoreValues from '@/components/home/CoreValues.vue'
 import CompanyVision from '@/components/home/CompanyVision.vue'
 import SupportedBy from '@/components/home/SupportedBy.vue'
 import TeamSection from '@/components/home/TeamSection.vue'
+import PrestigiousProduct from '@/components/home/PrestigiousProduct.vue'
 
 useHead({
   title: 'Texperia Techsolutions - Digital Engagement & Experiential Products',

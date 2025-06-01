@@ -9,7 +9,7 @@
           <img
             src="/playda-tagline-logo-dark.webp"
             alt="Playda-logo"
-            class="w-40 animate-fade-in mb-5"
+            class="w-40 animate-fade-in mb-5 filter drop-shadow-[0_0_15px_rgba(255,202,11,0.3)] hover:drop-shadow-[0_0_20px_rgba(255,202,11,0.5)] transition-all duration-300 transform hover:scale-105"
           />
           <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">
             Elevating engagement through gamification.
@@ -100,14 +100,29 @@
     <!-- Product Description -->
     <section class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <div class="max-w-3xl mx-auto">
-          <div class="prose prose-lg mx-auto">
-            <p class="text-gray-700 leading-relaxed mb-8">
-              Playda is our flagship product designed to elevate engagement through gamification.
-              Whether for customer loyalty, employee engagement, or real-time interactions, Playda
-              offers customizable solutions that turn ordinary moments into interactive experiences.
-            </p>
+        <div class="max-w-6xl mx-auto">
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div class="prose prose-lg">
+              <p class="text-gray-700 leading-relaxed mb-8">
+                Playda is our flagship product designed to elevate engagement through gamification.
+                Whether for customer loyalty, employee engagement, or real-time interactions, Playda
+                offers customizable solutions that turn ordinary moments into interactive
+                experiences.
+              </p>
+            </div>
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl transform rotate-3"
+              ></div>
+              <img
+                src="/playda.webp"
+                alt="Playda Platform"
+                class="relative rounded-2xl shadow-2xl transform -rotate-3 hover:rotate-0 transition-transform duration-500"
+              />
+            </div>
+          </div>
 
+          <div class="prose prose-lg mx-auto">
             <div class="bg-gray-50 p-8 rounded-xl mb-8">
               <h2 class="text-2xl font-bold mb-4">Key Features</h2>
               <ul class="space-y-4">
@@ -183,7 +198,7 @@
                 href="https://playda.io"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
+                class="inline-block bg-[#FFCA0B] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#FFCA0B] transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Learn more at Playda.io
               </a>

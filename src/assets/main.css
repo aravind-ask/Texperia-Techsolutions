@@ -57,3 +57,30 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-500;
 }
+
+@layer components {
+  .texperia-underline {
+    @apply relative inline-block;
+  }
+
+  .texperia-underline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -21px; /* 5px margin below the text */
+    height: 5px; /* Thickness of the underline */
+    width: 95px;
+    border-radius: 9999px;
+    background: linear-gradient(
+      to right,
+      #209ec0,
+      #355dd5,
+      #6c66aa,
+      #c09645,
+      #f9a90d,
+      #ff813e,
+      #f55866
+    );
+  }
+}

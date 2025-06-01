@@ -5,7 +5,13 @@
         <!-- Company Info -->
         <div>
           <!-- <h3 class="text-xl font-bold mb-4">Texperia Info Tech</h3> -->
-          <img src="/texperia-logo.webp" alt="Texperia-Logo" class="w-35 mb-5" />
+          <router-link to="/" class="bg-gray-800/50 p-4 rounded-lg inline-block mb-5">
+            <img
+              src="/texperia-logo.webp"
+              alt="Texperia-Logo"
+              class="w-35 invert opacity-90 hover:opacity-100 transition-opacity duration-300"
+            />
+          </router-link>
           <p class="text-gray-400 mb-4">
             Creating cutting-edge digital engagement and experiential products that transform how
             businesses connect with audiences.
