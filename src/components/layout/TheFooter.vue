@@ -109,7 +109,7 @@
       <!-- Bottom Bar -->
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
         <p>
-          &copy; {{ new Date().getFullYear() }} Texperia Techsolutions Pvt. Ltd. All rights
+          &copy; {{ new Date().getFullYear() }} Texperia Techsolutions Pvt. Ltd.<br> All rights
           reserved.
         </p>
       </div>

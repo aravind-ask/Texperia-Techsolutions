@@ -27,7 +27,7 @@
         >
           <div class="flex items-center gap-4 mb-6">
             <div
-              class="w-12 h-12 bg-[#F53028] rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300"
+              class="w-12 h-12 p-5 bg-[#F53028] rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300"
             >
               1
             </div>
