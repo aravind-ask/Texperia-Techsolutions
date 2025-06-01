@@ -68,8 +68,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -21px; /* 5px margin below the text */
-    height: 5px; /* Thickness of the underline */
+    bottom: -22px;
+    height: 5px;
     width: 95px;
     border-radius: 9999px;
     background: linear-gradient(

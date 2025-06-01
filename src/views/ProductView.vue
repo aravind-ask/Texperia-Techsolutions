@@ -128,7 +128,7 @@
               <ul class="space-y-4">
                 <li class="flex items-start">
                   <svg
-                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0"
+                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0 text-[#F53028]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -144,7 +144,7 @@
                 </li>
                 <li class="flex items-start">
                   <svg
-                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0"
+                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0 text-[#F53028]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -160,7 +160,7 @@
                 </li>
                 <li class="flex items-start">
                   <svg
-                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0"
+                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0 text-[#F53028]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -176,7 +176,7 @@
                 </li>
                 <li class="flex items-start">
                   <svg
-                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0"
+                    class="w-6 h-6 text-primary-600 mr-2 flex-shrink-0 text-[#F53028]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
